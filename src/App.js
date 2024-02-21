@@ -6,11 +6,12 @@ import {
   MdDone,
   MdClear,
 } from "react-icons/md";
+import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { useState } from "react";
 function App() {
   const [buy, setBuy] = useState(false);
   return (
-    <div className="w-full h-full bg-gray-300 flex items-center justify-center py-20">
+    <div className="w-full min-h-screen bg-gray-300 flex items-center justify-center py-20 max-md:flex-col">
       <div className="w-[250px] h-[350px] bg-white m-10 rounded-2xl overflow-hidden hover:shadow-xl hover:scale-105 ease-in duration-300 relative">
         <div className="h-[80%]">
           <img
@@ -62,6 +63,33 @@ function App() {
             <div>Size : 10.5</div>
             <div>Color: Black</div>
           </div>
+        </div>
+      </div>
+      <div className=" font-mono text-gray-600">
+        <div className="text-xl font-semibold">Shopping Card</div>
+        <div>Developed by</div>
+        <div>Nipun Avishka De Zoysa.</div>
+        <div className="flex gap-2 text-2xl mt-2">
+          <a
+            className="hover:text-gray-900 hover:mr-1 ease-out duration-300"
+            href="https://github.com/nipun-dezoysa/shoppingcard"
+          >
+            <FaGithub />
+          </a>
+
+          <a
+            className="hover:text-gray-900 hover:mr-1 ease-out duration-300"
+            href="https://www.linkedin.com/in/nipun-avishka-de-zoysa"
+          >
+            <FaLinkedin />
+          </a>
+
+          <a
+            className="hover:text-gray-900 hover:mr-1 ease-out duration-300"
+            href="https://www.facebook.com/nipun.avishka.90"
+          >
+            <FaFacebook />
+          </a>
         </div>
       </div>
     </div>
