@@ -38,14 +38,14 @@ function App() {
             </div>
           </div>
           <div className="group flex w-[50%] bg-blue-400 text-white">
-            <div
-              onClick={() => setBuy(false)}
-              className="w-[30%] h-[200%]  text-2xl  ease-in duration-300 group-hover:translate-y-[-50%]  cursor-pointer"
-            >
+            <div className="w-[30%] h-[200%]  text-2xl  ease-in duration-300 group-hover:translate-y-[-50%]  cursor-pointer">
               <div className="flex items-center justify-center h-[50%]">
                 <MdDone />
               </div>
-              <div className="flex items-center justify-center h-[50%] bg-red-400 ease-in duration-300 hover:pt-2 hover:bg-red-700">
+              <div
+                onClick={() => setBuy(false)}
+                className="flex items-center justify-center h-[50%] bg-red-400 ease-in duration-300 hover:pt-2 hover:bg-red-700"
+              >
                 <MdClear />
               </div>
             </div>
