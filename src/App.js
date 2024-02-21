@@ -71,7 +71,7 @@ function App() {
         </div>
         <div className="text-md max-md:text-sm">Developed by</div>
         <div className="text-md max-md:text-sm">Nipun Avishka De Zoysa.</div>
-        <div className="flex gap-2 text-2xl mt-2 max-md:text-lg">
+        <div className="flex gap-2 text-2xl mt-2 max-md:text-xl">
           <a
             className="hover:text-gray-900 hover:mr-1 ease-out duration-300"
             href="https://github.com/nipun-dezoysa/shoppingcard"
